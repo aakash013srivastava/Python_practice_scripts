@@ -25,7 +25,7 @@ def reset_day(days):
     days[inp_day] = ""
 
 while(True):
-    inp = int(input("Enter choice:\n1->Scheduling \n2->Prinitng Schedule\n4->Reset Days Schedule\n3->Exit\n"))
+    inp = int(input("Enter choice:\n1->Scheduling \n2->Prinitng Schedule\n3->Reset Days Schedule\n4->Exit\n"))
     if inp==1:
         schedule_week(days)
     elif inp ==2:
