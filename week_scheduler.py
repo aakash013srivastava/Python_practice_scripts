@@ -11,13 +11,14 @@ def create_file_structure():
     f.write(string)
     f.close()
 
-
-json_file =  open('schedule.txt','r')
+if not os.path.exists('schedule.txt'):
+    create_file_structure()
 
 if os.stat('schedule.txt').st_size == 0:
     print("file is empty")
     create_file_structure()
 else:
+    json_file =  open('schedule.txt','r')
     days = json.load(json_file)
     print((days))
 
