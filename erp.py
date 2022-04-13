@@ -17,7 +17,7 @@ else:
     f = open('erp.csv','w')
     employees=[]
     f.close()
-# employees = [("Aakash","tech","dev"),("Amit","accounts","manager")]
+
 
 def create_employee():
     emp = input("Enter name of the employee:")
@@ -27,7 +27,7 @@ def create_employee():
         f= open('erp.csv','a')
         f.write(emp+","+dept+","+designation+"\n")
         f.close()
-        # employees.append((emp,dept,designation))
+        
     else:
         print("No such department/designation exists\n")
 
@@ -42,9 +42,9 @@ def edit_employees():
     print(employees)
     string = emp+","+dept+","+designation+"\n"
     index = employees.index(string)
-    # print(string)
+    
     for line in employees:
-        # print(line)
+        
         if string == line:
             
             print("Enter new Details:")
